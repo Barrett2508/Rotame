@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://southashford.org.uk/wp/wp-content/uploads/2020/03/317224_stagecoach_master_rgb02.png" alt="Company Logo" class="logo">
+        <div id="hamburger" class="hamburger">&#9776;</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#employees">Employees</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle-mobile">
+                <div class="theme-toggle">
+                    <span class="light-icon-mobile fa fa-sun"></span>
+                    <div class="slider-container">
+                        <div class="slider"></div>
+                    </div>
+                    <span class="dark-icon-mobile fa fa-moon"></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to Stacecoach Rotame! Here you can find details about your upcoming schedule, see what overtime is available, find useful contact information and much more!</p>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="expandable" data-detail="detail1">
+                            <td>John Doe</td>
+                            <td>9 AM - 5 PM</td>
+                            <td>9 AM - 5 PM</td>
+                            <td>9 AM - 5 PM</td>
+                            <td>9 AM - 5 PM</td>
+                            <td>9 AM - 5 PM</td>
+                            <td>Off</td>
+                            <td>Off</td>
+                        </tr>
+                        <tr id="detail1" class="details-row">
+                            <td colspan="8">
+                                <p>Bus Route: Route 24</p>
+                                <p>Additional Details: John will be driving the Route 24 bus from Downtown to Uptown.</p>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                <!-- Cards for mobile view -->
+                <div class="cards">
+                    <div class="card">
+                        <h3>Monday</h3>
+                        <p><strong>John Doe:</strong> 9 AM - 5 PM</p>
+                        <p>Bus Route: Route 24</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tuesday</h3>
+                        <p><strong>John Doe:</strong> 9 AM - 5 PM</p>
+                        <p>Bus Route: Route 24</p>
+                    </div>
+                    <div class="card">
+                        <h3>Wednesday</h3>
+                        <p><strong>John Doe:</strong> 9 AM - 5 PM</p>
+                        <p>Bus Route: Route 24</p>
+                    </div>
+                    <div class="card">
+                        <h3>Thursday</h3>
+                        <p><strong>John Doe:</strong> 9 AM - 5 PM</p>
+                        <p>Bus Route: Route 24</p>
+                    </div>
+                    <div class=" card">
+                        <h3>Friday</h3>
+                        <p><strong>John Doe:</strong> 9 AM - 5 PM</p>
+                        <p>Bus Route: Route 24</p>
+                    </div>
+                    <div class="card">
+                        <h3>Saturday</h3>
+                        <p><strong>John Doe:</strong> Off</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sunday</h3>
+                        <p><strong>John Doe:</strong> Off</p>
+                    </div>
+                </div>
+                <!-- Navigation arrows -->
+                <div class="card-nav">
+                    <button id="prev-card">&#9664;</button>
+                    <button id="next-card">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        <section id="employees">
+            <h2>Overtime</h2>
+            <p>Details about overtime goes here (in cards like rota).</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alan Barrett. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
